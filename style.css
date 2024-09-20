@@ -1,0 +1,51 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background: linear-gradient(135deg,#cf9aff,#95c0ff);
+    margin: 0 10%;
+    height: 100%;
+    width: 80%;
+}
+.main-section{
+    height: 80%;
+    margin: 66px 0;
+   
+}
+.main{
+    display: flex;
+   
+    align-items: center;
+    /* margin: 10px; */
+    width: 300px;
+    /* background: #000; */
+}
+.main-heading{
+    font-size: 35px;
+    margin-left: 16px;
+    letter-spacing: 3px;
+}
+.create-btn{
+    margin: 33px 0;
+    height: 40px;
+    width: 200px;
+    color: white;
+    border-radius: 25px;
+    background: linear-gradient(#9418fd,#571094);
+    padding: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    border:none;
+ 
+}
+
+.myTextArea{
+    margin-bottom: 10px;
+    border-radius: 5px;   
+    font-size: 15px;
+    font-weight: 400;
+}

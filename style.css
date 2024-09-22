@@ -42,6 +42,24 @@ body{
     border:none;
  
 }
+.create-btn img{
+    margin-right: 10px;
+}
+
+.delete-all-btn{
+    margin-left: 23px;
+    height: 41px;
+    width: 200px;
+    color: white;
+    border-radius: 25px;
+    background: linear-gradient(#9418fd,#571094);
+    padding: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    border:none;
+ 
+}
+.delete-all-btn:hover{ cursor: pointer;}
 
 .myTextArea{
     margin-bottom: 10px;
@@ -50,15 +68,39 @@ body{
     font-weight: 400;
     outline: none;
 }
+
+.save-btn{
+    background: transparent;
+    height: 20px;
+    width: 20px;
+    border: none;
+    position: relative;
+    right: 39px;
+    bottom: 174px;
+}
+/* .save-btn i{
+    height: 20px;
+    width: 20px;
+} */
+
+.save-btn:hover{
+    cursor: pointer;
+}
+
+.save-btn i{
+    margin-right: 13px;
+}
+
 .close-btn{
     background: transparent;
     height: 20px;
     width: 20px;
     border: none;
     position: relative;
-    right: 41px;
-    bottom: 13px;
+    right:  45px;
+    bottom: 173px;
 }
+
 
 
 .close-btn:hover{

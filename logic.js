@@ -6,6 +6,7 @@
   createBtn.addEventListener("click", ()=>{
 
     const textField = document.getElementById("text-field");
+    
 
     const textArea = document.createElement('textarea');
     textArea.setAttribute('rows', '10'); // Set number of rows
@@ -13,8 +14,18 @@
     textArea.setAttribute('class', 'myTextArea');
     textArea.setAttribute('placeholder', 'write something');
 
+    // create close button
+    const closeBtn = document.createElement("button");
+    closeBtn.classList.add("close-btn");
+
+    closeBtn.innerHTML = `
+      <img src ="notes-app-img/images/delete.png" width="18px" hieght="18px">
+    `;
+
     // apend the textArea in textField
      textField.appendChild(textArea);
+     // append image in the textField
+      textField.appendChild(closeBtn);
 
   });
 
@@ -32,3 +43,4 @@
      localStorage.setItem('note', inputValue);
 
    }
+

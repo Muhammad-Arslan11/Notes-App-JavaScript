@@ -48,4 +48,19 @@ body{
     border-radius: 5px;   
     font-size: 15px;
     font-weight: 400;
+    outline: none;
+}
+.close-btn{
+    background: transparent;
+    height: 20px;
+    width: 20px;
+    border: none;
+    position: relative;
+    right: 41px;
+    bottom: 13px;
+}
+
+
+.close-btn:hover{
+   cursor: pointer;
 }

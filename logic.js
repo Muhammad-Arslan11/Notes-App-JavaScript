@@ -44,13 +44,14 @@
 
          // event listener for save btn
     saveBtn.addEventListener('click', () =>{
-       saveNotes(textArea.inputValue);
+      console.log(textArea.value);
+       saveNotes(textArea.value);
     });
 
-   
-     textField.appendChild(textArea);    // apend the textArea in textField
-     textField.appendChild(closeBtn);   // append closeBtn in the textField
-     textField.appendChild(saveBtn);   // append saveeBtn in the textField
+    // apend all elements here
+     textField.appendChild(textArea);   
+     textField.appendChild(closeBtn);   
+     textField.appendChild(saveBtn);   
 
      // event listener for delete-all-btn
       const deleteAll = document.getElementById('delete-all-btn').addEventListener('click',
@@ -58,6 +59,9 @@
          removeAllNotes();  // remove all notes in the textField
         }
       )
+
+      // trigger fetchNotes funciton here
+      fetchNotes();
 
   });
 
@@ -87,3 +91,23 @@
       document.querySelectorAll('textarea').forEach(textarea => textarea.remove());
     }; 
 
+
+     // fetchNotes
+      const fetchNotes = ()=>{
+        const textArea = document.querySelector('textarea');
+
+        let notes = JSON.parse(localStorage.getItem("notes")) || [];
+        textArea.textContent = notes;
+        console.log("this is fetchnotes: ",notes);
+      }
+
+  
+
+      // reset All Notes
+     // get resetBtn
+      document.getElementById('reset-btn').addEventListener('click', ()=>{
+        localStorage.clear();
+        // erase from all textFields
+        document.querySelectorAll('textarea').forEach((elem) => elem.value = "");
+      })
+      

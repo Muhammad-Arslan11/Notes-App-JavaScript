@@ -61,6 +61,21 @@ body{
 }
 .delete-all-btn:hover{ cursor: pointer;}
 
+.reset-btn{
+    margin-left: 23px;
+    height: 41px;
+    width: 200px;
+    color: white;
+    border-radius: 25px;
+    background: linear-gradient(#9418fd,#571094);
+    padding: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    border:none;
+ 
+}
+.reset-btn:hover{ cursor: pointer;}
+
 .myTextArea{
     margin-bottom: 10px;
     border-radius: 5px;   

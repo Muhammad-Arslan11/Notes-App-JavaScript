@@ -24,6 +24,12 @@ body{
     width: 300px;
     /* background: #000; */
 }
+.main-img:hover{
+    cursor: pointer;
+}
+.main-heading:hover{
+    cursor: pointer;
+}
 .main-heading{
     font-size: 35px;
     margin-left: 16px;
@@ -41,6 +47,9 @@ body{
     font-weight: 500;
     border:none;
  
+}
+.create-btn:hover{
+    cursor: pointer;
 }
 .create-btn img{
     margin-right: 10px;
